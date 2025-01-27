@@ -16,6 +16,10 @@ mv 000000039769.jpg test.jpg
 ./infer.sh
 ```
 
+## For running benchmark
+* Download Imagenet 9K samples.
+* https://github.com/EliSchwartz/imagenet-sample-images
+
 ## Save Model
 ```sh
 from transformers import ViTImageProcessor, ViTForImageClassification
