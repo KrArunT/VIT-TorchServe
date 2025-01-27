@@ -2,9 +2,15 @@
 
 ## Create Virtual env
 ```sh
+git clone https://github.com/KrArunT/VIT-TorchServe.git
 python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
+mkdir model-store
+./package.sh
+./run_server.sh
+#Open New terminal and run
+./infer.sh
 ```
 
 ## Save Model
