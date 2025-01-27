@@ -223,3 +223,5 @@ urllib3==2.3.0
 torchserve --stop
 
 ```
+## References:
+https://huggingface.co/google/vit-base-patch16-224
