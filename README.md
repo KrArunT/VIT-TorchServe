@@ -10,6 +10,9 @@ mkdir model-store
 ./package.sh
 ./run_server.sh
 #Open New terminal and run
+# Download image
+wget 'http://images.cocodataset.org/val2017/000000039769.jpg'
+mv 000000039769.jpg test.jpg
 ./infer.sh
 ```
 
