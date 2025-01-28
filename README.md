@@ -1,5 +1,18 @@
-# VIT-TorchServe
+# LLama3.2:1B Deployment
+## Steps
+```sh
+docker pull vllm/vllm-openai:latest
+docker run --runtime nvidia --gpus all \
+    -v ~/.cache/huggingface:/root/.cache/huggingface \
+    --env "HUGGING_FACE_HUB_TOKEN=<your_hugging_face_token>" \
+    -p 8000:8000 \
+    --ipc=host \
+    vllm/vllm-openai:latest \
+    --model meta-llama/Llama-3.2-1B-Instruct
 
+```
+
+# VIT Deployment
 ## **Run the Docker container with the required ports**
 ```sh
 docker run --rm -it -d -p 127.0.0.1:9085:9085 -p 127.0.0.1:9086:9086 -p 127.0.0.1:9087:9087 -p 127.0.0.1:9070:9070 -p 127.0.0.1:9071:9071 aruntiwary/vit_torchserve_image:v1
