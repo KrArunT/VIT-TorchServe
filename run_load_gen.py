@@ -5,7 +5,7 @@ import pandas as pd
 
 # Folder containing your ImageNet subsamples (subsampled dataset)
 dataset_folder = 'images'
-url = "http://127.0.0.1:8085/predictions/vit-model"
+url = "http://127.0.0.1:9085/predictions/vit-model"
 
 headers = {
     'Content-Type': 'application/octet-stream'  # Adjust content type as needed
