@@ -11,6 +11,15 @@ docker run --runtime nvidia --gpus all \
     --model meta-llama/Llama-3.2-1B-Instruct
 
 ```
+## SNORT-ML Deploy
+```sh
+docker run --name snort3 -h snort3 -u snorty -w /home/snorty -d -it ciscotalos/snort3 bash  
+docker exec -it snort3 bash
+
+docker run --name snort3 -h snort3 -u snorty -w /home/snorty -d -it -v /local_user/SNORT/ml:/home/snorty/examples ciscotalos/snort3 bash
+
+https://archive.wrccdc.org/pcaps/2012/wrccdc2012.pcap.gz  
+```
 
 # VIT Deployment
 ## **Run the Docker container with the required ports**
