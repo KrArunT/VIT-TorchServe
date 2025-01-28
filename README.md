@@ -12,6 +12,7 @@ docker run --runtime nvidia --gpus all \
 
 ```
 ## SNORT-ML Deploy
+https://github.com/KrArunT/snort-ml-deploy
 ```sh
 docker run --name snort3 -h snort3 -u snorty -w /home/snorty -d -it ciscotalos/snort3 bash  
 docker exec -it snort3 bash
@@ -60,8 +61,6 @@ wget 'http://images.cocodataset.org/val2017/000000039769.jpg'
 mv 000000039769.jpg test.jpg
 ./infer.sh
 ```
-
-
 
 ## Save Model
 ```sh
