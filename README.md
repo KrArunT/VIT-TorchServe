@@ -31,8 +31,7 @@ docker run --rm -it -d -p 127.0.0.1:9085:9085 -p 127.0.0.1:9086:9086 -p 127.0.0.
 ## For running benchmark
 * Download Imagenet 9K samples.
   ```sh
-  wget https://github.com/EliSchwartz/imagenet-sample-images
-  mv imagenet-sample-images images
+  git clone https://github.com/EliSchwartz/imagenet-sample-images.git images
   ```
 
 ### Run Loadgen and benchmark
